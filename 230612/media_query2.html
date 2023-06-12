@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #aaaaaa;
+      font-size: 1em;
+    }
+
+    #wrapper {
+      width: 1000px;
+      height: 2000px;
+      margin: 0 auto;
+    }
+
+    #wrapper>h1 {
+      text-align: center;
+    }
+
+    #block-wrapper {
+      width: 900px;
+      height: 500px;
+      padding: 10px;
+      margin: 0 auto;
+      clear: both;
+      box-sizing: border-box;
+    }
+
+    #block-wrapper>div {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      float: left;
+    }
+
+    #orange {
+      background-color: orange;
+    }
+
+    #blue {
+      background-color: blue;
+    }
+
+    #purple {
+      background-color: purple;
+    }
+
+    #green {
+      background-color: green;
+    }
+
+
+
+    @media screen and (max-width: 1024px) {
+      #wrapper {
+        width: 700px;
+      }
+
+      #block-wrapper {
+        width: 600px;
+        padding: 30px;
+      }
+
+      #block-wrapper>div {
+        width: 250px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      #wrapper {
+        width: 400px;
+      }
+
+      #block-wrapper {
+        width: 350px;
+        padding: 15px;
+      }
+
+      #block-wrapper>div {
+        width: 300px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {}
+
+    */
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+
+
+    <h1>반응형 웹 디자인</h1>
+
+    <div id="block-wrapper">
+      <div id="orange"></div>
+      <div id="blue"></div>
+      <div id="purple"></div>
+      <div id="green"></div>
+    </div>
+  </div>
+</body>
+
+</html>
