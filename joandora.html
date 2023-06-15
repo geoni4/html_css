@@ -6,33 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     html,
     body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
       width: 100%;
-      height: 100%;
       background: linear-gradient(to bottom, skyblue, white);
+      background-repeat: no-repeat;
       font-family: Arial, Helvetica, sans-serif;
     }
 
     .container {
-      margin: .5em auto;
+      margin: 0 auto;
+      margin-top: 0.5em;
       width: 60em;
     }
 
-    .main-image {
-      padding-top: 0.5em;
-      width: 100%;
-      height: 18em;
-      background: url("14/bg.png");
-      background-size: cover;
 
+
+    .main-image {
+
+      width: 100%;
+      height: 280px;
+      background: url("./14/bg.png");
+      background-size: no-repeat;
     }
 
     .main-image>h1 {
-      padding-left: 0.5em;
+      padding: 0.5em 0 0 0.5em;
+      margin: 0;
       font-size: 4em;
 
       color: yellow;
@@ -65,10 +70,9 @@
     }
 
     .content {
-      width: 100%;
+      width: 75%;
       height: 28em;
-      padding-left: 0.5em;
-      box-sizing: border-box;
+      padding: 1em 1em;
     }
 
     .sidebar {
@@ -80,8 +84,12 @@
       justify-content: space-evenly;
     }
 
+    img {
+      width: 14em;
+    }
+
     .footer {
-      height: 5em;
+      height: 7em;
       padding-top: 2em;
       text-align: center;
       color: white;
@@ -107,14 +115,20 @@
 
       .container {
         width: 38em;
+
       }
 
       .wrapper {
         display: block;
       }
 
+      .main-image {
+        height: 13em;
+      }
+
       .content {
         width: 100%;
+        height: auto;
       }
 
       .sidebar {
@@ -122,14 +136,14 @@
         flex-direction: row;
       }
 
+      img {
+        height: auto;
+        margin: 1px auto;
+      }
+
     }
 
     @media screen and (max-width: 650px) {
-
-      html,
-      body {
-        height: auto;
-      }
 
       .container {
         width: 20em;
@@ -143,6 +157,7 @@
 
       .main-image>h1 {
         margin: 0;
+        padding-top: 0;
         padding-left: 0.4em;
         font-size: 2.5em;
       }
@@ -166,23 +181,17 @@
       }
 
       .wrapper {
-
         flex-direction: column;
-      }
-
-      .content {
-        height: auto;
-        padding: 5px;
-      }
-
-      img {
-        width: 280px;
-        height: auto;
       }
 
       .sidebar {
         flex-direction: column;
         background-color: #eeeeee;
+      }
+
+      img {
+        width: 280px;
+        margin: 3px;
       }
     }
   </style>
@@ -220,15 +229,9 @@
         </p>
       </div>
       <div class="sidebar">
-        <div class="image">
-          <img src="./14/1.jpg" />
-        </div>
-        <div class="image">
-          <img src="./14/2.jpg" />
-        </div>
-        <div class="image">
-          <img src="./14/3.jpg" />
-        </div>
+        <img src="./14/1.jpg" />
+        <img src="./14/2.jpg" />
+        <img src="./14/3.jpg" />
       </div>
     </div>
     <div class="footer">
